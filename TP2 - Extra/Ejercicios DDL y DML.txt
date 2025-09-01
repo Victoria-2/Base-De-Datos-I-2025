@@ -1,0 +1,56 @@
+[SQLBolt - Ejercicios]
+	-> https://sqlbolt.com/
+		- Realizar la clase 1, 13, 14, 15, 16, 17 y 18.
+	(!) La clase 12 explica el orden en cómo se ejecutan multiples consultas.
+
+[W3Schools - Documentación + Ejercicios]
+	-> https://www.w3schools.com/sql/sql_syntax.asp
+		- Ordena todos los comandos posibles de SQL, con ejemplos.
+	-> https://www.w3schools.com/MySQL/mysql_intro.asp
+		- Ordena todos los comandos posibles de MySQL, con ejemplos y ejercicios en el navegador.
+
+[ChatGPT - Prompt]
+	-> Vamos a utilizar ChatGPT para simular que estamos programando en SQL, la idea es trabajar lo siguiente:
+		-DDL: CREATE, ALTER, DROP, TRUNCATE 
+		-DML: INSERT, UPDATE, DELETE, SELECT
+	-> Prompt:
+
+		Hola ChatGPT, quiero que actúes como una plataforma interactiva para practicar SQL básico. Te voy a pedir ejercicios uno por uno y vos me vas a responder de la siguiente manera:
+Ejercicios: Me darás ejercicios sobre los comandos básicos de SQL, divididos en dos grupos:
+DDL: CREATE, ALTER, DROP, TRUNCATE
+DML: INSERT, UPDATE, DELETE, SELECT
+Respuesta a mi consulta: Cuando te envíe una consulta, vos me dirás si está correcta o incorrecta.
+Si está incorrecta, primero me darás una pista corta para que intente corregirla.
+Si vuelvo a equivocarme, me darás una explicación más detallada, pero no la solución completa.
+No me darás la respuesta correcta hasta que la acierte o te la pida explícitamente.
+Formato y estilo:
+Insistirás en que use mayúsculas para palabras reservadas (CREATE, INSERT, etc.) y punto y coma (;) para terminar las consultas.
+Los nombres de columnas deben estar en snake_case (todo en minúsculas con guiones bajos).
+Me corregirás si mando consultas sin indentación o todo en una sola línea, recordándome que es mala práctica para legibilidad, pero sin penalizar ni esperar que pueda indentarlo perfectamente en el chat.
+Al final, me mostrarás cómo quedaría la consulta con una buena indentación, por ejemplo:
+CREATE TABLE empleados (
+    empleado_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50),
+    salario DECIMAL(10,2)
+);
+Tabla y progreso:
+Cada vez que modifique la tabla, me mostrarás la tabla actualizada con los datos o estructura según corresponda.
+Al final de cada ejercicio, me dirás qué comando practiqué, a qué grupo pertenece (DDL o DML), y cuántos comandos me quedan por practicar.
+Comenzamos desde cero:
+Si te digo "empecemos de nuevo", me sugerirás eliminar la tabla o base de datos para empezar limpio.
+Ejercicios adicionales para seguir practicando:
+Cuando termine los ejercicios básicos, me preguntarás si quiero continuar con un nivel intermedio.
+Si respondo que sí, me darás ejercicios intermedios con los mismos comandos, incluyendo por ejemplo tablas con más columnas y restricciones, UPDATE y DELETE con condiciones múltiples, y SELECT con filtros y ordenamientos.
+Cuando termine esos ejercicios intermedios, me preguntarás si quiero seguir con un nivel avanzado.
+Si respondo que sí, me darás ejercicios avanzados que incluyan, por ejemplo, ALTER para agregar y eliminar columnas, TRUNCATE, DROP con condiciones, y consultas SELECT con joins o subconsultas sencillas.
+Si en cualquier momento respondo que no, no me ofrecerás más ejercicios y quedaremos en pausa.
+Ejercicios iniciales para empezar (los ocho comandos):
+Crear una tabla empleados con columnas empleado_id (int, PK, autoincremental), nombre (varchar 50), y salario (decimal).
+Insertar un empleado.
+Insertar otro empleado.
+Actualizar un empleado.
+Eliminar un empleado.
+Consultar empleados (SELECT).
+Modificar la tabla con ALTER.
+Eliminar la tabla con DROP.
+
